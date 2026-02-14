@@ -1,0 +1,332 @@
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0;
+        box-shadow: 0 5px 15px var(--shadow-heavy);
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .menu-toggle:checked ~ .nav-menu {
+        max-height: 500px;
+    }
+
+    .menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .districts {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-item {
+        height: 250px;
+    }
+
+    .stat-overlay h3 {
+        font-size: 3rem;
+    }
+
+    .stat-overlay p {
+        font-size: 1.2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .page-content {
+        padding-top: 90px;
+    }
+
+    .timeline-item {
+        gap: 1rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    .data-table {
+        font-size: 0.9rem;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        height: 250px;
+    }
+
+    .stat-overlay h3 {
+        font-size: 3rem;
+    }
+
+    .stat-overlay p {
+        font-size: 1.2rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-item {
+        height: 250px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        text-align: center;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        gap: 0.5rem;
+    }
+
+    .data-table {
+    .data-table {
+        font-size: 0.85rem;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 0.5rem 0.25rem;
+    }
+
+    }
+
+    .timeline-marker {
+        width: 15px;
+        height: 15px;
+    }
+
+    .timeline-content {
+        padding: 0.75rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1rem;
+    }
+
+    .tech-badges {
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+    }
+
+    .nav-container {
+        max-width: 1400px;
+    }
+
+    .footer-content {
+        max-width: 1400px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+@media print {
+    .main-nav,
+    .menu-icon,
+    .cta-button,
+    .filter-buttons {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .page-content {
+        padding-top: 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+       but you can add light theme overrides here if needed */
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .featured-item img,
+    .gallery-item img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}

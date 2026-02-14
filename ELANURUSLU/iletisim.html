@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | İstanbul: Üç Semt, Tek Vizör</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>İstanbul: Üç Semt, Tek Vizör</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="uskudar.html">Üsküdar</a></li>
+                <li><a href="bahcesehir.html">Bahçeşehir</a></li>
+                <li><a href="cekmekoy.html">Çekmeköy</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="galeri.html">Tüm Galeri</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <section class="contact-hero">
+            <h1>İletişim</h1>
+            <p class="subtitle">Sorularınız ve geri bildirimleriniz için benimle iletişime geçin</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-form-container">
+                <h2>İletişim Formu</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ad Soyad *</label>
+                        <input type="text" id="name" name="name" required placeholder="Adınızı ve soyadınızı girin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta *</label>
+                        <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+90 (5XX) XXX XX XX">
+                    </div>
+
+                    <div class="form-group">
+                        <label>İletişim Konusu *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="subject" value="genel" checked>
+                                <span>Genel Bilgi</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="subject" value="fotograf">
+                                <span>Fotoğraf Hakkında</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="subject" value="proje">
+                                <span>Proje Hakkında</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="subject" value="diger">
+                                <span>Diğer</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>İlgilendiğiniz Semtler</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="districts" value="uskudar">
+                                <span>Üsküdar</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="districts" value="bahcesehir">
+                                <span>Bahçeşehir</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="districts" value="cekmekoy">
+                                <span>Çekmeköy</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span>Yeni fotoğraflar ve güncellemeler hakkında bilgilendirilmek istiyorum</span>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Gönder</button>
+                        <button type="reset" class="btn-secondary">Temizle</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-box" style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9)); padding: 2rem; border-radius: 15px; border: 2px solid #d4af37; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; margin-bottom: 2rem;">
+                    <h3 style="color: #d4af37; margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 3px solid #d4af37; padding-bottom: 0.8rem;">İletişim Bilgileri</h3>
+                    <ul class="contact-details" style="list-style: none; padding: 0;">
+                        <li style="padding: 1rem; margin-bottom: 0.8rem; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;">
+                            <strong style="color: #d4af37; font-weight: 600;">Ad Soyad:</strong>
+                            <span style="color: #e0e0e0;">Arda Metin Adıgüzel</span>
+                            <span style="color: #e0e0e0;">Elanur Uslu</span>
+                            <span style="color: #e0e0e0;">Mert Dinçer</span>                            
+                        </li>
+                        <li style="padding: 1rem; margin-bottom: 0.8rem; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;">
+                            <strong style="color: #d4af37; font-weight: 600;">Üniversite:</strong>
+                            <span style="color: #e0e0e0;">Işık Üniversitesi</span>
+                        </li>
+                        <li style="padding: 1rem; margin-bottom: 0.8rem; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;">
+                            <strong style="color: #d4af37; font-weight: 600;">Ders:</strong>
+                            <span style="color: #e0e0e0;">Web Tasarımı ve Programlama</span>
+                        </li>
+                        <li style="padding: 1rem; margin-bottom: 0; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;">
+                            <strong style="color: #d4af37; font-weight: 600;">Ders Kodu:</strong>
+                            <span style="color: #e0e0e0;">YÖBİ2213</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-box" style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9)); padding: 2rem; border-radius: 15px; border: 2px solid #d4af37; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; margin-bottom: 2rem;">
+                    <h3 style="color: #d4af37; margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 3px solid #d4af37; padding-bottom: 0.8rem;">Çalışma Saatleri</h3>
+                    <p>İletişim formunu kullanarak 7/24 mesaj gönderebilirsiniz. Mesajlarınıza en kısa sürede yanıt vermeye çalışacağım.</p>
+                </div>
+
+                <div class="info-box" style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9)); padding: 2rem; border-radius: 15px; border: 2px solid #d4af37; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; margin-bottom: 2rem;">
+                    <h3 style="color: #d4af37; margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 3px solid #d4af37; padding-bottom: 0.8rem;">Sık Sorulan Sorular</h3>
+                    <ul class="faq-list" style="list-style: none; padding: 0;">
+                        <li style="padding: 1.2rem; margin-bottom: 1rem; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; transition: all 0.3s ease;"><strong style="color: #d4af37; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Fotoğrafları kullanabilir miyim?</strong><br>
+                        Eğitim amaçlı kullanım için benimle iletişime geçebilirsiniz.</li>
+                        <li style="padding: 1.2rem; margin-bottom: 1rem; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; transition: all 0.3s ease;"><strong style="color: #d4af37; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Yeni semtler eklenecek mi?</strong><br>
+                        Evet, zamanla İstanbul'un farklı semtlerini de eklemeyi planlıyorum.</li>
+                        <li style="padding: 1.2rem; margin-bottom: 0; background: rgba(26, 26, 26, 0.5); border-radius: 10px; border-left: 4px solid #d4af37; transition: all 0.3s ease;"><strong style="color: #d4af37; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Fotoğraf çekim ipuçları alabilir miyim?</strong><br>
+                        Tabii ki! İletişim formunu kullanarak sorularınızı iletebilirsiniz.</li>
+                    </ul>
+                </div>
+
+                <div class="info-box map-container" style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9)); padding: 2rem; border-radius: 15px; border: 2px solid #d4af37; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); transition: all 0.3s ease;">
+                    <h3 style="color: #d4af37; margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 3px solid #d4af37; padding-bottom: 0.8rem;">Işık Üniversitesi Şile Kampüsü</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12013.699295768849!2d29.54494267702103!3d41.16890046147122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409e32a67119d599%3A0xf4e228611d2df2f0!2zRk1WIEnFn8SxayDDnG5pdmVyc2l0ZXNp!5e0!3m2!1str!2str!4v1768149592593!5m2!1str!2str" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>İstanbul: Üç Semt, Tek Vizör</h4>
+                <p>Işık Üniversitesi - Web Tasarımı ve Programlama Dersi</p>
+                <p>Final Projesi 2026</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Semtler</h4>
+                <ul class="footer-links">
+                    <li><a href="uskudar.html">Üsküdar</a></li>
+                    <li><a href="bahcesehir.html">Bahçeşehir</a></li>
+                    <li><a href="cekmekoy.html">Çekmeköy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>Arda Ela Mert</p>
+                <p>Işık Üniversitesi</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Arda Ela Mert. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
